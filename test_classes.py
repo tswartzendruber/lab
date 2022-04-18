@@ -1,6 +1,7 @@
 import pytest
 from classes import *
 
+
 class Test:
     tv1 = Television()
 
