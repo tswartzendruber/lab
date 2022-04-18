@@ -9,7 +9,7 @@ class Television:
     MIN_VOLUME = 0      # Minimum TV volume
     MAX_VOLUME = 2      # Maximum TV volume
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Constructor to create initial state of a TV remote object
         """
@@ -17,7 +17,7 @@ class Television:
         self.__volume = Television.MIN_VOLUME
         self.__on = False
 
-    def power(self):
+    def power(self) -> None:
         """
         Method to turn on/off TV (pressing power button on TV remote)
         :return: TV's on/off status
@@ -27,7 +27,7 @@ class Television:
         else:
             self.__on = False
 
-    def channel_up(self):
+    def channel_up(self) -> None:
         """
         Method to change channel up
         :return: Higher TV channel
@@ -40,7 +40,7 @@ class Television:
         else:
             pass
 
-    def channel_down(self):
+    def channel_down(self) -> None:
         """
         Method to change channel down
         :return: Lower TV channel
@@ -53,7 +53,7 @@ class Television:
         else:
             pass
 
-    def volume_up(self):
+    def volume_up(self) -> None:
         """
         Method to turn volume up
         :return: Higher TV volume
@@ -66,7 +66,7 @@ class Television:
         else:
             pass
 
-    def volume_down(self):
+    def volume_down(self) -> None:
         """
         Method to turn volume down
         :return: Lower TV volume
@@ -79,7 +79,7 @@ class Television:
         else:
             pass
 
-    def __str__(self):
+    def __str__(self) -> str:
         """
         Method to check TV status, channel, and volume
         :return: TV on/off status, TV channel, and TV volume
