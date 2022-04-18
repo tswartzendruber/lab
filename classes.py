@@ -1,5 +1,5 @@
 class Television:
-    MIN_CHANNEL = 0     # Minimum TV channel option
+    MIN_CHANNEL = 0     # Minimum TV channel
     MAX_CHANNEL = 3     # Maximum TV channel
 
     MIN_VOLUME = 0      # Minimum TV volume
