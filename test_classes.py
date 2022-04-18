@@ -1,7 +1,10 @@
-import unittest
+import pytest
 from classes import *
 
-class MyTestCase(unittest.TestCase):
+class Test:
+    def test_init(self):
+        pass
+
     def test_power(self):
         pass
 
@@ -16,3 +19,4 @@ class MyTestCase(unittest.TestCase):
 
     def test_volume_down(self):
         pass
+
