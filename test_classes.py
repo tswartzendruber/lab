@@ -3,7 +3,8 @@ from classes import *
 
 
 class Test:
-    tv1 = Television()
+    def setup_method(self):
+        self.tv1 = Television()
 
     def test_init(self):
         assert self.tv1.__str__() == 'TV status: Is on = False, Channel = 0, Volume = 0'
